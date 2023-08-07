@@ -28,19 +28,9 @@ function expandWPContent(OpenWaypoint) {
         document.getElementById("wpcontent" + OpenWaypoint).classList.remove("makeitsmall");
         wpopen = OpenWaypoint;
     }
-    //alignwp(OpenWaypoint);
+    window.location.href = "#wpmainheading";
 }
 function hideWPContent(CloseWaypoint) {
     document.getElementById("wpcontent" + CloseWaypoint).classList.add("makeitsmall");
 }
 
-function alignwp(wpcount){
-const waypoint = document.getElementById("wpcontent" + wpcount);
-let sticky = waypoint.offsetTop;
-if (window.scrollY >= sticky) {
-    waypoint.classList.add("alignwp");
-    sticky = window.scrollY;
-  } else {
-    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-  }
-}

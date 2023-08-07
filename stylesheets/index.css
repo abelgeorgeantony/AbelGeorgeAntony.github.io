@@ -192,7 +192,8 @@
   width: 100vw;
 }
 .alignwp {
-  top: 0;
+  position: relative;
+  top: 3vh;
 }
 
 .content {
@@ -281,4 +282,19 @@ body {
   z-index: -999;
   height: 0;
   width: 0;
+}
+
+.skillsdiv {
+  & .heading {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  background-color: rgb(41, 102, 163);
+  color: aliceblue;
+  & .thanks{
+    display: flex;
+    justify-content: center;
+  }
 }
