@@ -157,10 +157,13 @@
   }
 
   footer {
-    background-color: rgb(41, 102, 163);
+    background-color: rgb(59, 47, 64);
     color: aliceblue;
-    & .thanks{
-      display: flex;
-      justify-content: center;
-    }
+    display: flex;
+    justify-content: center;
+  }
+
+  footer > div{    
+    display: flex;
+    justify-content: center;
   }
