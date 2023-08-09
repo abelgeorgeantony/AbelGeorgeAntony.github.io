@@ -2,7 +2,6 @@
 window.onscroll = function () { windowsticky(); };
 
 const navbar = document.getElementById("horizontalbar");
-const upperhalf = document.getElementById("upper-half");
 const sticky = navbar.offsetTop;
 
 function windowsticky() {
