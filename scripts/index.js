@@ -1,10 +1,12 @@
-function onloadhidings() {
+function onloadhidings(pagename) {
     document.getElementById("sideverticalbar").style.visibility = "hidden";
-    hideAllWPContent();
+    if(pagename === "index") {
+        hideAllWPContent();
+    }
 }
 
-function loadpage() {
-    onloadhidings();
+function loadpage(page) {
+    onloadhidings(page);
     setTimeout(function () { document.getElementById("loadingcover").style.visibility = "hidden" }, 500);
     //document.getElementById("loadingcover").style.visibility = "hidden";
 }
